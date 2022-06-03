@@ -1,6 +1,7 @@
 import React, {useState} from 'react';
 import './App.css';
 import {Button} from "./Components/Button";
+import {Input} from "./Components/Input/Input";
 
 type MoneyType = {
     banknots: string
@@ -54,6 +55,7 @@ function App() {
             <Button title={'All'} callback={() => filterMoney('all')}/>
             <Button title={'RUBLS'} callback={() => filterMoney('rubles')}/>
             <Button title={'Dollars'} callback={() => filterMoney('dollars')}/>
+            <Input />
         </div>
     );
 }
